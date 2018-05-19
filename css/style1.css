@@ -1,0 +1,130 @@
+body{
+	margin: 0 auto;
+	background-image:url(../img/fondo.jpg);
+	background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-family:"Simplified Arabic", Arial, "Estrangelo Edessa";
+}
+.container{
+		display:grid;
+		grid-template-columns:1fr;
+		align-items:center;
+		justify-content:center;
+		margin:0 auto;
+		background-color:white;
+		width:300px;
+		padding:0 15px;
+}
+#item1, #inicio, #logo{
+		display:flex;
+		grid-column:1/2;
+		width:300px;
+		height:100px;
+}
+#logo{
+		background-image:url(../img/logo.jpg);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+#item2{
+	display:flex;
+	grid-column:1/2;
+	justify-content:center;
+}
+#busqueda, #buscar{
+	width:250px;
+	
+}
+#buscar{
+	background-image:url(../img/buscar.png);
+	background-repeat:no-repeat;
+	background-position: right;
+	border-radius:3px;
+	border:2px solid #a6a6a6;
+}
+#item4{
+text-align: center;
+text-transform: uppercase;
+background-color: cornsilk;
+border:1px solid #000;
+padding:2px;
+word-spacing:4px;
+letter-spacing:2px;
+}
+#item5, #bienvenida{
+		display:flex;
+		grid-column:1/2;
+		width:300px;
+		height:100px;
+}
+#bienvenida{
+	background-image:url(../img/welcomeres.jpg);
+	background-position:center center;
+	background-size:contain;
+	background-repeat:no-repeat;
+
+}
+h1{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-transform:uppercase;
+}
+#np{
+text-align: center;
+}
+.art{
+border: 3px solid #00b2ff4d;
+border-style: double;
+margin: 2px;
+}
+.imgart{
+height:250px;
+background-repeat:no-repeat;
+background-size:cover;
+display:flex;
+grid-column:1/2;
+}
+#art1{
+background-image:url(../img/1.jpg);
+
+}
+#art2{
+background-image:url(../img/2.jpg);
+}
+#art3{
+background-image:url(../img/3.jpg);
+}
+#art4{
+background-image:url(../img/4.jpg);
+}
+#art5{
+background-image:url(../img/5.jpg);
+}
+#art6{
+background-image:url(../img/6.jpg);
+}
+.agregar{
+display:flex;
+width:50px;
+height:50px;
+position: relative;
+left: 35%;
+}
+.agregar div{
+background-image:url(../img/agregar.png);
+background-repeat:no-repeat;
+background-size:contain;
+}
+
+
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:black;
+	font-weight:bold;
+	cursor:pointer;
+}
+

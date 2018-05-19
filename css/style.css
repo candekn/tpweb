@@ -1,0 +1,199 @@
+body{
+	margin: 0 auto;
+	background-image:url(../img/fondo.jpg);
+	background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-family:"Simplified Arabic", Arial, "Estrangelo Edessa";
+}
+
+.container{
+		display:grid;
+		grid-template-columns:33% 34% 33%;
+		margin:0 auto;
+		background-color:white;
+		padding:0px 10px;
+		max-width:90%;
+		box-sizing:content-box;
+} 
+*{
+	max-width:100%;
+}
+.header{
+		grid-columns:1/4;
+		height:100px;
+		background-color:#f7e1fa;
+}
+#item1{
+	display:flex;
+	grid-columns:1/2;	
+}
+#inicio, #logo{
+	height:100px;
+	width:300px;
+}
+#logo{
+	background-image:url(../img/logo.png);
+	background-repeat:no-repeat;
+}
+#item2{
+	display:flex;
+	justify-content:center;
+	 align-items:center;
+}
+#buscar, #busqueda{
+	height:30px;
+	width:350px;
+}
+#buscar{
+	background-image:url(../img/buscar.png);
+	background-repeat:no-repeat;
+	background-position: right;
+	border-radius:3px;
+	border:2px solid #a6a6a6;
+}
+
+#item3{
+	display:flex;
+	justify-content:right;
+	align-items:right;
+}
+#carrito, #imgcarrito{
+	height:80px;
+	width:80px;
+}
+#imgcarrito{
+	background-image:url(../img/carrito.png);
+	repeat:no-repeat;
+}
+#item4{
+		grid-column:1/4;
+	grid-row:2;
+	text-align:center;
+	word-spacing:30px;
+	letter-spacing:5px;
+	text-transform:uppercase;
+	background-color:#f7b7ff;
+	margin-bottom:2px;
+}
+#item5{
+		display:flex;
+		grid-column:1/4;
+}
+#bienvenida{
+	background-image:url(../img/welcome.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:available;
+	width:-moz-available;
+	    width: -webkit-fill-available;
+	height:300px;
+	max-height:100%;
+	background-position-x:center;
+}
+.pasos{
+height:300px;
+justify-content:center;
+align-items:center;
+}
+.img{
+		height:100%;
+		width:100%;
+		background-size: cover;
+background-repeat: no-repeat;
+border:1px solid #f195ff;
+background-position:center center;
+
+}
+#item6{
+	grid-column:1/2;
+}
+#uno{
+		background-image:url(../img/paso1.jpg);
+}
+#item7{
+	grid-column:2/3;
+}
+#dos{
+background-image:url(../img/paso2.jpg);
+}
+#item8{
+grid-column:3/4;
+}
+#tres{
+background-image:url(../img/paso3.jpg);
+}
+
+@media only screen and (max-width: 500px)
+		{
+					.container{
+						display:block;
+						margin: 0 auto;
+						align-items:center;
+						justify-contents:center;
+						box-sizing: content-box;
+						width: 250px;
+						max-width: 100%;
+					}
+					.header{
+						height:auto;
+						max-height:100%;
+						background-color:#f7b7ff00;
+					}
+					#item1{
+						display:block;
+					}
+					#inicio, #logo{
+						height: 100px;
+						max-width: 100%;
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+					#item2{
+					display:block;
+
+					padding-bottom:2px;
+					}
+
+					#buscar, #busqueda{
+						height:20px;
+						max-width:100%;
+
+					}	
+					#item3{
+						display:none;
+					}
+
+					#item4{
+					display:block;
+					word-spacing:1px;
+					letter-spacing:0px;
+					border:2px solid #f892de;
+					
+					}
+					#item5{
+						margin:0 auto;
+					}
+					#bienvenida{
+						background-image:url(../img/welcomeres.jpg);
+						background-repeat:no-repeat;
+						height: 100px;
+						width:100%;
+					max-width: 100%;
+					background-size: contain;
+						
+					}
+					.pasos{
+					display:none;
+					}
+		
+		}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:black;
+	font-weight:bolder;
+	cursor:pointer;
+}
