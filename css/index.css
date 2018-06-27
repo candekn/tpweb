@@ -1,0 +1,73 @@
+body{
+	font-family:Curlystars;
+}
+.grids{
+	display: grid;			/*columnas*/
+	-moz-display: grid;
+	-webkit-display:grid;
+	-o-display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	-moz-grid-template-columns: 25% 25% 25% 25%; 
+	-webkit-grid-template-columns: 25% 50% 25%; 
+	-o-grid-template-columns: 25% 50% 25%; 
+	grid-template-rows: 5% 2% 25% 15% 40% 8% 5%; /*filas*/
+	-moz-grid-template-rows: 5% 2% 25% 15% 40% 8% 5%;
+	-webkit-grid-template-rows: 5% 2% 25% 15% 40% 8% 5%;
+	-o-grid-template-rows: 5% 2% 25% 15% 40% 8% 5%;
+}
+.header{
+		grid-column:1/4;
+		grid-row:1;
+		box-shadow: 2px 5px 2px 2px #888;
+	}
+#carrito{
+	position: absolute;
+	right: 50px;
+    top: 20px;  
+}
+#buscar{
+	background-image:url(../img/buscar.png);
+	background-repeat:no-repeat;
+	background-position: right;
+	border-radius:3px;
+	border:2px solid #a6a6a6;
+	height:30px;
+	width:350px;
+	}
+
+form{
+	position: absolute;
+	top: 50px;
+    left: 550px;
+}
+	
+.barra-nav{
+	font-family:stencil;
+	text-align:center;
+	word-spacing: 30px;
+	letter-spacing:5px;
+	text-transform:uppercase;
+	background: #777;
+	grid-row:2;
+	grid-column:1/4;
+	}
+#inicio{
+		grid-column:1;
+		}
+
+
+a{
+	text-decoration:none;
+	color:#ffcc33;
+	}
+a:hover{
+cursor:pointer;
+color:#ccff66;
+}
+
+.paso {
+	width:450px;
+	float:inherit;
+	margin:10px;
+}
+
