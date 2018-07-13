@@ -1,30 +1,123 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>
-		Rainbow Feather - Inicio
-	</title>
-	<meta charset="utf-8">
-	<link href="css/index.css" rel="stylesheet" media="all">
-</head>
-<body>
-	<div class="grids">
-		<header class="header"">
-		<a id="inicio" href="index.html"><img src="img/logo.png"></a>
-		<form method="get" action="productos.html" >
-		<input id="buscar" type="search" placeholder="Buscar...">
-		</form>
-		<a id="carrito" href="carrito.html"><img src="img/carrito.png"></a>
-		</header>
-		<nav class="barra-nav">
-                    <a href="index.html">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Personalización</a>
-                    <a href="#">Contacto</a>
-        </nav>
-		<img class="paso" src="img/paso1.png">
-		<img class="paso" src="img/paso2.png">
-		<img class="paso" src="img/paso3.png">
+	<head>
+		<title>
+			Inicio - Rainbow Feather
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style1.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script> 
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/code.js"></script>
+		<script type="text/javascript" src="js/codejquery.js"></script>
+	</head>
+	<body>
+		<noscript>
+			<div>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
+			Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</div>
+			</noscript> 
+		<div class="container">
+					<div id="item1" class="header">
+						<a id="inicio" href="index.html">
+							<div id="logo"></div>
+						</a>
+					</div>
+				<div id="item2" class="header">
+					<form id="busqueda" method="get">
+						<input id="buscar" type="search" placeholder="Buscar...">
+					</form>
+				</div>
+				<div id="item3" class="header">
+					<a id="carrito" href="carrito.html">
+						<div id="imgcarrito"></div>
+					</a>
+				</div>
+				
+				<div id="carousel">
+					<a class="ant" onclick="prev()"><div class="ant" id="ante"></div></a>
+						<img id="slider" src="img/paso1.png">
+					<a class="sig" onclick="siguiente()"><div class="sig" id="sigu"></div></a>
+				</div>
+				<div id="item5">
+					<div id="bienvenida"></div>
+				</div>
+				<div id="item4">
+					<a href="index.html">Inicio</a>
+							<a href="personalizacion.html">Personalización</a>
+							<a href="carrito.html">Carrito</a>
+							<a href="contacto.html">Contacto</a>
+				</div>
+				<div id="producto">
+						<h1 id="np">Nuestros Productos</h1>
+						<div id="item9" class="art">
+
+							<div id="art1" class="imgart"></div>
+							<article>
+							<h1>Vestido Pin-up $999<a class="agregar"><div class="agregar sumap" ></div></a></h1>
+							</article>
+						</div>
+						<div id="item10" class="art">
+							<div id="art2" class="imgart"></div>
+
+							<article>
+							<h1>Vestido Floreado $799<a class="agregar"><div class="agregar sumap"></div></a></h1>
+							</article>
+						</div>
+						<div id="item11" class="art">
+						 
+							<div id="art3" class="imgart"></div>
+							<article>
+							<h1>3/4 Manga Marinera $550<a  class="agregar"><div class="agregar sumap"></div></a></h1>					 
+							</article>
+						</div>
+						<div id="item12" class="art">
+
+							<div id="art4" class="imgart"></div>
+							<article>
+							<h1>Remera 3/4 Botones $699<a class="agregar"><div class="agregar sumap"></div></a></h1>				 
+							</article>
+						</div>
+						<div id="item13" class="art">
+							<div id="art5" class="imgart"></div>
+
+							<article>
+							<h1>Vestido Marinero Two Colors $1299<a class="agregar"><div class="agregar sumap"></div></a></h1>
+							</article>
+						</div>
+						<div id="item14" class="art">
+							<div id="art6" class="imgart"></div>
+
+							<article>
+							<h1>Remerona Rayada de Invierno $850<a  class="agregar"><div class="agregar sumap"></div></a></h1>					 
+							</article>
+						</div>
+							<div class="mediosdepago">
+							<h2>Medios de Pago</h2>
+							<div id="visa" class="mdp"></div>
+							<div id="mastercard" class="mdp"></div>
+							<div id="american" class="mdp"></div>
+							<div id="paypal" class="mdp"></div>
+						</div>
+				</div>
+				
+				<div class="footer">
+					<div id="horario">
+					<p>Dirección: Av. Corrientes 1382, Local 18.</p>	
+					<p>Horario: Lun a Vie: 8 a 16hs. Sab: 10 a 18hs.</p>
+					</div>
+					<div class="navbaja">
+							<a href="#logo">Arriba </a> 
+							<a href="personalizacion.html">Personalización </a> 
+							<a href="carrito.html">Carrito </a> 
+							<a href="contacto.html">Contacto </a> 
+					</div>
+					<div class="social">
+							<a href="#"><div id="fc" class="redes"></div></a>
+							<a href="#"><div id="tw" class="redes"></div></a>
+							<a href="#"><div id="insta" class="redes"></div></a>
+					</div>
+				</div>
 	</div>
-</body>
+	</body>
 </html>
